@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="URLoop API Test Suite(failed)">
+    <classes>
+      <class name="services.Service">
+        <methods>
+          <include name="RetrieveZoneDetails"/>
+          <include name="login"/>
+          <include name="retrieveStaffDetails"/>
+          <include name="retrieveUnassignedServices"/>
+          <include name="retrieveResidentDetails"/>
+          <include name="retrievelocDetails_Settings"/>
+          <include name="RetrieveServiceDetails"/>
+          <include name="RetrieveEventDetails"/>
+        </methods>
+      </class> <!-- services.Service -->
+    </classes>
+  </test> <!-- URLoop API Test Suite(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
